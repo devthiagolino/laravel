@@ -17,7 +17,7 @@ class CreateAutoresTable extends Migration
             $table->string('nome');
             $table->string('email')->unique();
             $table->string('telefone', 30);
-            $table->string('foto', 4);
+            $table->string('foto', 150);
             $table->date('dt_nascimento');
             $table->timestamps();
         });

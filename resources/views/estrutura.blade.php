@@ -14,7 +14,7 @@
 
   <!-- Bootstrap -->
   <link href="{{ asset('assets/css/libs.css') }}" rel="stylesheet">
-  <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
+  <link href="{{ asset('assets/css/app.css') }}" rel="stylesheet">
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>

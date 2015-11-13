@@ -17,7 +17,7 @@ class CreateLivrosTable extends Migration
             $table->increments('id');
             $table->string('titulo');
             $table->string('resumo', 30);
-            $table->string('foto', 4);
+            $table->string('foto', 150);
             $table->string('editora');
             $table->string('isbn');
             $table->double('altura', 3, 2);
@@ -25,7 +25,7 @@ class CreateLivrosTable extends Migration
             $table->integer('qtd_paginas');
             $table->string('idioma', 50);
             $table->string('ano_edicao', 4);
-            $table->string('largura', 3, 2);
+            $table->double('largura', 3, 2);
             $table->double('valor', 9, 2);
 
             $table->timestamps();            

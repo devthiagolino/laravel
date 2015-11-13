@@ -16,8 +16,8 @@
 
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Livros</a></li>
-        <li><a href="#">Autores</a></li>
+        <li><a href="{{ url('/livros') }}">Livros</a></li>
+        <li><a href="{{ url('/autores') }}">Autores</a></li>
       </ul>          
 
       <ul class="nav navbar-nav navbar-right">            

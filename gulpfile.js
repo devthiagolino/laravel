@@ -9,9 +9,10 @@ elixir(function(mix) {
   	"/libs/**"
   	], 'public/assets/css/libs.css');
 
-  mix.styles([
-  	"/main.css"
-  	], 'public/assets/css/main.css');
+  
+  mix.sass([
+    'app.scss',
+    ], 'public/assets/css');
 
   mix.scripts([
   	'/libs/**',
