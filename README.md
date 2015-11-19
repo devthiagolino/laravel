@@ -12,3 +12,7 @@ Claro, deixando também, nosso código com um manutenção de baixo custo e meno
 No front-end, apenas algumas coisa básicas, como o uso do GULP, esse super gerenciador de tarefas, e sem contar com o apoio do nosso grande amigo Elixir.
 
 Você pode criar o banco de dados totalmente com as migratios.
+
+Obs.: Esse projeto estará sempre em desenvolvimento...
+
+Grande abraço e qualquer dúvida, <a href="malito:devthiagolino@gmail.com">devthiagolino@gmail.com</a>
