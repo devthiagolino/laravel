@@ -19,6 +19,10 @@
 </div>
 @endif
 
+<div class="alert alert-success" role="alert" style="display:none" id="alerts">
+	<p id="realtime-msg"></p>
+</div>
+
 <div class="panel panel-default">
 	
 	<div class="panel-heading">
@@ -82,4 +86,5 @@
 	@endif
 	
 </div>
+
 @endsection

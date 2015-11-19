@@ -73,7 +73,7 @@ class AutorService implements ServicoContrato
 				->withInput();
 			}
 
-			$this->repositorio->update($input, $id);
+			$update = $this->repositorio->update($input, $id);			
 			return redirect()->back()->with('sucesso', 'Registro atualizado com sucesso.');
 
 		}catch (Exception $e){
@@ -94,7 +94,8 @@ class AutorService implements ServicoContrato
 				->withInput();
 			}
 
-			$this->repositorio->store($input);
+			$create = $this->repositorio->create($input);			
+			event(new \App\Events\StoreAutor($create));
 			return redirect()->back()->with('sucesso', 'Registro criado com sucesso.');
 
 		}catch (Exception $e){

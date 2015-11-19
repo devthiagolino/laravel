@@ -25,14 +25,15 @@
   <body>
 
     <div class="container">
-      
+
       @include('partial.nav')
       
       @yield('conteudo')
 
     </div>
-
     
+
+    <script src="https://js.pusher.com/3.0/pusher.min.js"></script>
     <script src="{{ asset('assets/js/libs.js') }}"></script>
     <script src="{{ asset('assets/js/main.js') }}"></script>
 
