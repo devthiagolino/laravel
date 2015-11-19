@@ -32,7 +32,6 @@ Autores - Novo
 @endif
 
 <div class="row">
-
   <form action="{{ $rota }}" enctype="multipart/form-data" id="form" method="post">
 
     {{ csrf_field() }}
@@ -65,7 +64,7 @@ Autores - Novo
     @if($item->foto)
     <div class="col-md-6">
       <a href="{{ $item->foto }}" target="_blank">
-        <img src="{{ $item->foto }}" alt="{{ $item->tiulo }}" class="img-rounded small edit">
+        <img src="{{ $item->foto }}" alt="{{ $item->nome }}" class="img-rounded small edit">
       </a>
     </div>
     @endif

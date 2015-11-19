@@ -20,7 +20,7 @@ class AutorService implements ServicoContrato
 	public function index()
 	{
 		$data['resultado'] = $this->repositorio->scopeQuery(function($query){
-			return $query->orderBy('nome','asc');
+			return $query->orderBy('id','desc');
 		})->paginate(5);
 		return view('autores.index', $data);
 	}
@@ -73,6 +73,8 @@ class AutorService implements ServicoContrato
 				->withInput();
 			}
 
+			$input['dt_nascimento'] = implode('-', array_reverse(explode('/', $input['dt_nascimento'])));
+
 			$update = $this->repositorio->update($input, $id);			
 			return redirect()->back()->with('sucesso', 'Registro atualizado com sucesso.');
 
@@ -93,6 +95,8 @@ class AutorService implements ServicoContrato
 				->withErrors($validator)
 				->withInput();
 			}
+
+			$input['dt_nascimento'] = implode('-', array_reverse(explode('/', $input['dt_nascimento'])));
 
 			$create = $this->repositorio->create($input);			
 			event(new \App\Events\StoreAutor($create));

@@ -22,9 +22,4 @@ class AutorRepositoryEloquent extends BaseRepository implements AutorRepository
         return Autor::class;
     }
 
-    public function presenter()
-    {
-        //return "App\\Presenters\\AutorPresenter";
-    }
-
 }
